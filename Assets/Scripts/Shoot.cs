@@ -32,14 +32,41 @@ public class Shoot : MonoBehaviour
         {
             nextFire = Time.time + fireRate;
 
-            StartCoroutine (ShotEffect());
+            StartCoroutine(ShotEffect());
             Vector3 rayOrigin = fpsCam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0.0f));
             RaycastHit hit;
             line.SetPosition(0, gunEnd.position);
-            if ()
+            if (Physics.Raycast(rayOrigin, fpsCam.transform.forward, out hit, weaponRange))
             {
+                line.SetPosition(1, hit.point);
 
+                ShootableBox health = hit.collider.GetComponent<ShootableBox>();
+
+                if (health != null)
+                {
+                    health.Damage(damage);
+                }
+                if (hit.rigidbody != null)
+                {
+                    hit.rigidbody.AddForce(-hit.normal * hitForce);
+                }
             }
+            else
+            {
+                line.SetPosition(1, rayOrigin + (fpsCam.transform.forward * weaponRange));
+            }
+
         }
+        
     }
+    private IEnumerator ShotEffect()
+    {
+        line.enabled = true;
+
+        yield return shotDuration;
+        line.enabled = false;
+
+
+    }
+
 }
