@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -147,7 +147,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 291, y: 474}
-  m_SizeDelta: {x: 286.8, y: 152.2}
+  m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &103726
 MonoBehaviour:
@@ -301,11 +301,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f18d7bc96377704ab720575a5c63f88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRadius: 4
+  spawnRadius: 5
   prefabs: []
-  prefabEnemy: {fileID: 0}
-  prefabBlueEnemy: {fileID: 0}
-  spawnRate: 5
+  spawnRate: 1
   spawnFactor: 0
   time: 60
 --- !u!4 &73717136
@@ -597,7 +595,7 @@ MonoBehaviour:
   damage: 10
   range: 100
   fpsCam: {fileID: 534669904}
-  impactForce: 80
+  impactForce: 30
   fireRate: 15
 --- !u!23 &280237014
 MeshRenderer:
@@ -947,17 +945,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f18d7bc96377704ab720575a5c63f88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRadius: 4
+  spawnRadius: 5
   prefabs:
   - {fileID: 5931969260295504878, guid: f10c7353f07283d4dbdf228b47dd1bb4, type: 3}
-  - {fileID: 19957288932248656, guid: b30e6fe0fbfdc7a4e8beff49b59d0e61, type: 3}
-  prefabEnemy: {fileID: 5931969260295504878, guid: f10c7353f07283d4dbdf228b47dd1bb4,
-    type: 3}
-  prefabBlueEnemy: {fileID: 5116594345658443728, guid: 747b6e758d1c66c409ad6411bd616fcf,
-    type: 3}
+  - {fileID: 5116594345658443728, guid: 747b6e758d1c66c409ad6411bd616fcf, type: 3}
   spawnRate: 5
   spawnFactor: 0
-  time: 8
+  time: 60
 --- !u!4 &437348727
 Transform:
   m_ObjectHideFlags: 0
@@ -1298,11 +1292,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f18d7bc96377704ab720575a5c63f88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRadius: 4
+  spawnRadius: 5
   prefabs: []
-  prefabEnemy: {fileID: 0}
-  prefabBlueEnemy: {fileID: 0}
-  spawnRate: 5
+  spawnRate: 1
   spawnFactor: 0
   time: 60
 --- !u!4 &673245725
@@ -1378,7 +1370,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Menu
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 0}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2388,7 +2380,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: You Win!!!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 0}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2655,11 +2647,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f18d7bc96377704ab720575a5c63f88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRadius: 4
+  spawnRadius: 5
   prefabs: []
-  prefabEnemy: {fileID: 0}
-  prefabBlueEnemy: {fileID: 0}
-  spawnRate: 5
+  spawnRate: 1
   spawnFactor: 0
   time: 60
 --- !u!4 &1414724370
@@ -2705,11 +2695,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f18d7bc96377704ab720575a5c63f88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRadius: 4
+  spawnRadius: 5
   prefabs: []
-  prefabEnemy: {fileID: 0}
-  prefabBlueEnemy: {fileID: 0}
-  spawnRate: 5
+  spawnRate: 1
   spawnFactor: 0
   time: 60
 --- !u!4 &1527253626

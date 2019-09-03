@@ -19,7 +19,7 @@ public class KillCount : MonoBehaviour
     }
     public void Win()
     {
-        if (killCount == 10)
+        if (killCount >= 10)
         {
             Debug.Log("We win");
         }

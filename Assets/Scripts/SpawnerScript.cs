@@ -8,8 +8,8 @@ public class SpawnerScript : MonoBehaviour
 {
     public float spawnRadius = 5f;
     public GameObject[] prefabs;
-    public GameObject prefabEnemy;
-    public GameObject prefabBlueEnemy;
+    //public GameObject prefabEnemy;
+    //public GameObject prefabBlueEnemy;
     public float spawnRate = 1f;
     public float spawnFactor = 0f;
     public float time = 60f;
@@ -43,7 +43,7 @@ public class SpawnerScript : MonoBehaviour
     //    {
     //        spawnFactor = 0;
     //    }
-    //    if (time == 60f)
+    //    if (time >= 60f)
     //    {
     //        Instantiate(prefabBlueEnemy);
     //    }
