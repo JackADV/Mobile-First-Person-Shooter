@@ -6,7 +6,7 @@ using System.Threading;
 
 public class SpawnerScript : MonoBehaviour
 {
-    public float spawnRadius = 5f;
+    public float spawnRadius = 3f;
     public GameObject[] prefabs;
     //public GameObject prefabEnemy;
     //public GameObject prefabBlueEnemy;
