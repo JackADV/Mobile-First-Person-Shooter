@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Gun : MonoBehaviour
 {
@@ -22,16 +23,16 @@ public class Gun : MonoBehaviour
         }
     }
 
-    void Shoot()
+    public void Shoot()
     {
         //Instantiate(BulletPrefab)
         //GameObject clone = Instantiate(bulletPrefab, fpsCam.transform.position, fpsCam.transform.rotation);
         RaycastHit hit;
-       if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
+        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
             Debug.Log(hit.transform.name);
 
-           Shootable shootable = hit.transform.GetComponent<Shootable>();
+            Shootable shootable = hit.transform.GetComponent<Shootable>();
 
             if (shootable != null)
             {
